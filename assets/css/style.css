@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #319BFC;
+    padding: 16px 69px 16px 69px;
+    position: fixed;
+}
+
+.containerNavBar {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.containerNavBar .withImg {
+    width: 140px;
+    height: 38px;
+}
+
+.containerNavBar .containerLogin {
+    width: 195px;
+    height: 28px;
+    justify-content: end;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.containerNavBar .containerLogin .responsiveMenu {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.containerNavBar .containerLogin i {
+    color: white;
+}
+
+.userName {
+    display: flex;
+    gap: 4px;
+}
+
+.containerNavBar .containerLogin .userName h4,
+.containerNavBar .containerLogin .userName i {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+}
+
+nav .menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 25px;
+    width: 200px;
+    height: auto;
+    min-width: 100px;
+    background: #319BFC;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+nav .menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .menu i {
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+    color: #319BFC;
+}
+
+nav .menu h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+/*  body */
+
+.containerBody {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg.png');
+    display: flex;
+    padding: 42px 69px 0px 69px;
+}
+
+.containerBody .sidebar {
+    display: flex;
+    position: fixed;
+    width: 211px;
+    height: 78%;
+    margin-top: 50px;
+    border-radius: 10px;
+    background: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerBody .sidebar .sidebarFirst {
+    width: 100%;
+    height: 32px;
+    background-color: #319BFC;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0px 4px 8px;
+}
+
+.containerBody .sidebar .sidebarFirst h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    color: #fff;
+}
+
+.containerBody .sidebar .sidebarLast {
+    width: 100%;
+    height: 32px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 0px 4px 8px;
+    margin: 12px 0px 0px 0px;
+    border-radius: 10px;
+}
+
+.containerBody .sidebar .sidebarLast h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    color: #000;
+}
+
+.containerBody .sidebar .sidebarLast .icon {
+    width: 100%;
+    height: 32px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0px 4px 8px;
+    margin: 12px;
+    gap: 10px;
+}
+
+.containerBody .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-left: 211px;
+    padding: 50px 60px 70px 60px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerBody .content .contentTop {
+
+    width: 100%;
+    height: 103px;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    padding: 20px 80px 20px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerBody .content .contentTop .balance {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerBody .content .contentTop .balance h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.63px;
+    color: #000;
+}
+
+.containerBody .content .contentTop .balance h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: #000;
+}
+
+.containerBody .content .contentBottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #fff;
+    margin-top: 42px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.containerBody .content .contentBottom h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.89px;
+
+}
+
+.containerBody .content .contentBottom .titleTable {
+    width: 100%;
+    height: 41px;
+    border-radius: 10px;
+    margin-top: 12px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.containerBody .content .contentBottom .titleTable h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: #000;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerBody .content .contentBottom .DescriptionTable {
+    width: 100%;
+    height: 41px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.containerBody .content .contentBottom .DescriptionTable h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: #000;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    gap: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+}
+
+.toggle {
+    all: unset;
+    color: #000;
+    width: 80px;
+    padding: 10px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    transform: rotate(45deg);
+    transition: 0.4s;
+  }
+  
+  .list {
+    background-color: #319BFC;
+    color: #444;
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(4, 40px);
+    border-radius: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: 0.4s;
+    position: absolute;
+    width: 190px;
+    margin-top: 180px;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s, transform 0.4s var(--delay);
+    transform: translateX(-100%);
+    user-select: none;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .list-item:hover {
+    color: #fff;
+  }
+  
+  .toggle:focus::after {
+    transform: rotate(225deg);
+  }
+  
+  .toggle:focus ~ .list {
+    height: 160px;
+  }
+  
+  .toggle:focus ~ .list .list-item {
+    transform: translateX(0);
+  }
+
+
+@media screen and (max-width: 1000px) {
+    .containerNavBar .containerLogin .responsiveMenu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .containerBody .sidebar {
+        display: flex;
+        position: fixed;
+        width: 211px;
+        height: 78%;
+        margin-top: 50px;
+        border-radius: 10px;
+        background: #fff;
+        flex-direction: column;
+        justify-content: space-between;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .containerBody .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-left: 0px;
+        padding: 50px 60px 70px 60px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .containerBody .sidebar.active {
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .containerBody .content .contentTop .balance {
+        width: 240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .containerBody .content .contentTop .balance h3 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26.63px;
+        color: #000;
+    }
+    
+    .containerBody .content .contentTop .balance h4 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16.94px;
+        color: #000;
+    }
+    .containerNavBar .withImg {
+        width: 120px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .containerBody {
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/bg.png');
+        display: flex;
+        padding: 42px 4px 0px 4px;
+    }
+
+    .containerBody .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-left: 0px;
+        padding: 50px 0px 70px 0px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .containerBody .content .contentTop {
+
+        width: 100%;
+        height: 103px;
+        border-radius: 10px;
+        border: 1px solid #d9d9d9;
+        background-color: #fff;
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .containerBody .content .contentTop .balance h3 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+    }
+    
+    .containerBody .content .contentTop .balance h4 {
+        font-size: 10px;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .containerBody .content .contentBottom .titleTable h4 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 10.94px;
+        color: #000;
+        width: 100px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .containerBody .content .contentBottom .DescriptionTable h4 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 10.94px;
+        color: #000;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        gap: 10px;
+    }
+
+    .containerNavBar .withImg {
+        width: 80px;
+        height: 26px;
+    }
+
+    .userName {
+        display: flex;
+        gap: 4px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+}
