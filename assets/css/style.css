@@ -386,23 +386,6 @@ a {
     text-decoration: none;
 }
 
-/* Deposit html  */
-.containerBody .back {
-    width: 100%;
-    height: 50px;
-    margin: 70px 69px 0px 0px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.containerBody .containerDeposit {
-    display: flex;
-    justify-content: center;
-    width: calc(100% - 500px);
-    height: 1000px;
-}
-
 @media screen and (max-width: 1000px) {
     .containerNavBar .containerLogin .responsiveMenu {
         opacity: 1;

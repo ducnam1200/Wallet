@@ -42,13 +42,13 @@
         <div class="back">
             <a href="index.html"><i class="fa-solid fa-angle-left fa-xl"></i></a>
         </div>
-        
+
         <div class="containerDeposit">
-            <h2>Deposit crypto</h2>
+            <h2>Withdraw</h2>
             <div class="containerAll">
                 <h4>Network</h4>
                 <div class="dropdown">
-                    <input type="text" class="text02" readonly placeholder="Change coin">
+                    <input type="text" class="text02" readonly placeholder="Change coin" required>
                     <div class="option">
                         <div onmouseover="show('BTC')" class="optionCoin">
                             <img style="margin-right: 15px;" src="./assets/images/Bitcoin.png">
@@ -68,7 +68,23 @@
                         </div>
                     </div>
                 </div>
-                <h4 style="margin-top: 18px;">Note </h4>
+                <h4 style="margin-top: 30px;">Amount</h4>
+                <div class="inputAmount">
+                    <input type="number" placeholder="Enter withdrawal amount" required>
+                    <div class="btnAmount">
+                        <h4>BTC</h4>
+
+                        <button>MAX</button>
+                    </div>
+                </div>
+                <div class="available">
+                    <h5>Available: <span style="color: #FF0000; font-weight: 400;">0.00000000</span> <b>BTC</b> </h5>
+
+                    <h5 style="color: #FF0000;font-weight: 400;">1.8% fee</h5>
+                </div>
+
+
+                <h4 style="margin-top: 18px;">Note: </h4>
                 <div class="note">
                     <i class="fa-solid fa-circle-exclamation fa-xl"></i>
                     <h4>You have to deposit at least 0.0001 <b>BTC</b> to be credited. Any deposit that is less than
@@ -78,24 +94,10 @@
                     <i class="fa-solid fa-circle-exclamation fa-xl"></i>
                     <h4>This deposit address only accepts BTC. Do not send other coins to it.</h4>
                 </div>
-                <h4>Deposit address</h4>
-                <div class="inputCopy">
-                    <input type="text" id="myInput" readonly value="B63nBFj513">
-                    <div class="btnCopy">
-                        <button onclick="myFunction()">Copy</button>
-                    </div>
-                </div>
-                <div class="qrcode">
-                    <div class="qrcodeColumn">
-                        <img src="./assets/images/qrcode.png">
-                        <h4>Scan code instantly</h4>
-                    </div>
-                    <div class="reload"> 
-                        <i class="fa-solid fa-rotate fa-xl"></i>
-                    </div>
-                </div>
-                <div class="transitionHistory">
-                    <h4>Transactions Hitory</h4>
+
+
+                <div class="confirm">
+                    <h4>confirm</h4>
                 </div>
             </div>
         </div>
@@ -106,9 +108,16 @@
         <h4>Unidi © 2023</h4>
     </div>
 
-
     <!-- Scripts -->
     <script>
+
+        let input = document.getElementById('input')
+        let h1 = document.getElementsByTagName('h2')[0]
+        input.addEventListener('input', () => {
+            h1.textContent = input.value
+        })
+
+
         let userName = document.querySelector('.userName');
         let menu = document.querySelector('.menu');
         userName.onclick = function () {
@@ -122,21 +131,6 @@
 
         function show(a) {
             document.querySelector('.text02').value = a;
-        }
-
-        function myFunction() {
-            // Get the text field
-            var copyText = document.getElementById("myInput");
-
-            // Select the text field
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-
-            // Copy the text inside the text field
-            navigator.clipboard.writeText(copyText.value);
-
-            // Alert the copied text
-            alert("Copied the text: " + copyText.value);
         }
     </script>
 
