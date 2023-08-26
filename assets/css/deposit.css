@@ -477,7 +477,7 @@ body {
     }
 }
 
-@media screen and (max-height: 1500px) and (min-height: 700px) {
+/* @media screen and (max-height: 1500px) and (min-height: 700px) {
     .containerBodyDeposit .containerDeposit {
         display: flex;
         justify-content: center;
@@ -487,4 +487,4 @@ body {
         align-items: center;
         margin-top: -20px;
     }
-}
+} */
