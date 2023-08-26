@@ -102,54 +102,61 @@
             </div>
         </div>
 
-        <div class="content">
-            <div class="containerBodyDeposit" style="background-image: none; box-shadow: none;">
-                <div class="containerDeposit">
-                    <div class="containerAll" style="gap: 30px;">
-                        <div class="inputAmount" style="height: 64px;">
-                            <input type="number" placeholder="Enter an amount" required>
-                            <div class="divAmount">
-                                <h4>Balance: 1.000</h4>
-                                <div class="btnAmount" style="border: 0px;">
-                                    <button>MAX</button>
+        <!-- <div class="content"> -->
+        <div class="containerBodyDeposit" style="background-image: none; box-shadow: none; align-items: center;">
+            <div class="containerDeposit">
+                <div class="containerAll" style="gap: 30px;">
+                    <div class="inputAmount" style="height: 64px;">
+                        <input type="number" placeholder="Enter an amount" required>
+                        <div class="divAmount">
+                            <h4>Balance: 1.000</h4>
+                            <div class="btnAmount" style="border: 0px;">
+                                <button>MAX</button>
 
-                                    <img src="assets/images/Bitcoin.png">
+                                <img src="assets/images/Bitcoin.png">
 
-                                    <h4>BTC</h4>
-                                </div>
+                                <h4>BTC</h4>
                             </div>
-                        </div>
-
-                        <div class="inputAmount" style="height: 64px;">
-                            <input type="text" placeholder="Enter an price" required style="border-radius: 10px;">
-                        </div>
-
-                        <div class="inputAmount" style="height: 64px;">
-                            <input type="number" placeholder="Enter an amount" value="234.321" required>
-                            <div class="divAmount">
-                                <h4>Balance: 1.000</h4>
-                                <div class="btnAmount" style="border: 0px;width: 150px;">
-                                    <h4>Select a token</h4>
-                                    <i class="fa-solid fa-chevron-down" onclick="openForm()"></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="confirm">
-                            <h4>Supply</h4>
                         </div>
                     </div>
-                </div>
 
+                    <div class="inputAmount" style="height: 64px;">
+                        <input type="text" placeholder="Enter an price" required style="border-radius: 10px;">
+                    </div>
+
+                    <div class="inputAmount" style="height: 64px;">
+                        <input type="number" placeholder="Enter an amount" value="234.321" required>
+                        <div class="divAmount">
+                            <h4>Balance: 1.000</h4>
+                            <div class="btnAmount" style="border: 0px;width: 150px;">
+                                <h4>Select a token</h4>
+                                <i class="fa-solid fa-chevron-down" onclick="openForm()"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="confirm">
+                        <h4>Supply</h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="form-popup" id="myForm">
+        </div>
+
+
+        <!-- </div> -->
+
+
+    </div>
+
+        <div class="form-popup" id="myForm">
+            <div class="containerForm">
                 <form class="form-container">
                     <h4>Select a Token</h4>
-
+    
                     <i class="fa-solid fa-magnifying-glass" style="position: absolute; margin: 20px 0 0 20px;"></i>
                     <input style="padding-left: 50px;" type="text" placeholder="Search" name="email" required>
-
+    
                     <h6 style="font-size: 14px;">Token name</h6>
                     <div class="tokenName">
                         <img src="./assets/images/BNB.png" width="24px" height="24px" style="margin-right: 26px;">
@@ -171,17 +178,14 @@
                         <h5 style="width: 160px;">APT</h5>
                         <h5>12000</h5>
                     </div>
-
+    
                     <div class="btnContainer">
                         <button type="button" class="btnPopup" onclick="closeForm()">Listing Token</button>
                     </div>
-
+    
                 </form>
             </div>
         </div>
-
-
-    </div>
 
     <!-- Footer -->
     <div class="footer">

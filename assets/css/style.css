@@ -197,7 +197,7 @@ nav .menu h4 {
     display: flex;
     margin-left: 211px;
     padding: 50px 60px 70px 60px;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
 }
 
@@ -435,7 +435,18 @@ a {
     display: none;
     position: fixed;
     z-index: 9;
-    margin-left: 380px;
+    /* margin-left: 380px; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .containerForm {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
   }
   
   /* Add styles to the form container */
@@ -490,7 +501,7 @@ a {
     opacity: 1;
   }
 
-  .form-popup .form-container h4 {
+  .form-popup .containerForm .form-container h4 {
     font-size: 22px;
     font-weight: 700;
     width: 100%;
@@ -557,7 +568,7 @@ a {
 
     .containerBody .content {
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
         margin-left: 0px;
         padding: 50px 60px 70px 60px;
@@ -679,5 +690,28 @@ a {
         opacity: 0;
         visibility: hidden;
         transition: 0.5s;
+    }
+}
+
+@media screen and (min-height: 1000px) {
+    .containerBody {
+        width: 100%;
+        height: 100vh;
+        background-image: url('../images/bg.jpg');
+        display: flex;
+        padding: 42px 4px 0px 4px;
+    }
+    .containerBody .content .contentBottom {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin-top: 42px;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
     }
 }
