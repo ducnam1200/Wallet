@@ -17,7 +17,7 @@
     <!-- navbar -->
     <nav>
         <div class="containerNavBar">
-            <img src="assets/images/logo.png" class="withImg" />
+            <a href="index.html"><img src="assets/images/logo.png" class="withImg" /></a>
             <div class="containerLogin">
                 <div class="userName">
                     <h4>Hello - Abi</h4>
@@ -39,8 +39,8 @@
 
     <!-- Sidebar -->
     <div class="containerBodyDeposit">
-        <div class="back">
-            <a href="index.html"><i class="fa-solid fa-angle-left fa-xl"></i></a>
+        <div class="back" onclick="history.back()">
+            <i class="fa-solid fa-angle-left fa-xl"></i>
         </div>
         
         <div class="containerDeposit">
@@ -81,7 +81,7 @@
                 <h4>Deposit address</h4>
                 <div class="inputCopy">
                     <input type="text" id="myInput" readonly value="B63nBFj513" style="height: 42px;">
-                    <div class="btnCopy" style="margin-top: 10px;">
+                    <div class="btnCopy">
                         <button onclick="myFunction()">Copy</button>
                     </div>
                 </div>

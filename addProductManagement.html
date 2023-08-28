@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Wallet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="containerNavBar">
+            <a href="index.html"><img src="assets/images/logo.png" class="withImg" /></a>
+            <div class="containerLogin">
+                <div class="userName">
+                    <h4>Hello - Abi</h4>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <i class="fa-solid fa-bell fa-xl"></i>
+                <div class="responsiveMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-caret-up fa-xl"></i>
+            <h4>
+                Profile
+            </h4>
+            <h4>
+                Logout
+            </h4>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="containerBody">
+        <div class="sidebar">
+            <div>
+                <div class="sidebarFirst" style="background: none;">
+                    <img src="./assets/images/icon/stock.png" width="20px" height="20px">
+                    <h4 style="color: black;">Analytics</h4>
+                </div>
+                
+                <div class="sidebarAccordion">
+                    <div class="sidebarContentBx">
+                        <div class="sidebarLabel">
+                            <div class="label">
+                                <img src="./assets/images/icon/new.png" width="20px" height="20px">
+                                <h4>Order Management</h4>
+                            </div>
+                            <i class="fa-solid fa-chevron-down" style="float: right;"></i>
+                        </div>
+                        <div class="sidebarContent">
+                            <p>Order 1</p>
+                            <p>Order 2</p>
+                            <p>Order 3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebarLast" style="margin-top: -2px;">
+                    <img src="./assets/images/icon/money.png" width="20px" height="20px">
+                    <h4>Transaction Management</h4>
+                </div>
+
+                <div class="sidebarAccordion1">
+                    <div class="sidebarContentBx1">
+                        <div class="sidebarLabel1">
+                            <div class="label">
+                                <img src="./assets/images/icon/gift.png" width="20px" height="20px">
+                                <h4>Order Management</h4>
+                            </div>
+                            <i class="fa-solid fa-chevron-down" style="float: right;"></i>
+                        </div>
+                        <div class="sidebarContent1">
+                            <a >Product Category</a><br>
+                            <a >Your shop's products</a>
+                            <div class="btnActive"><a>Warehouse</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="content" style="gap: 32px;">
+           
+            <div class="contentTop" style="height: 100%; align-items: center; padding: 8px 21px 8px 21px;" >
+                <div class="containerKeyWords">
+                    <h3>Keywords</h3>
+                    <input type="text" placeholder="Product name" required>
+                </div>
+                
+                <div class="containerKeyWords">
+                    <h3>Product category</h3>
+                    <select>
+                        <option value="null" hidden disabled selected>All categories</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="containerKeyWords">
+                    <h3>Arrange</h3>
+                    <select>
+                        <option value="null" hidden disabled selected>New products</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="containerSearch">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #fff;"></i>
+                    <h3>Search</h3>
+                </div>
+            </div>
+
+            <div class="contentTop" style="height: 100%; padding: 8px 21px 8px 21px; justify-content: flex-start; gap: 34px;" >
+                <h3 class="btnContentTop" style="background: #299020;">
+                    Select all
+                </h3>
+                <h3 class="btnContentTop" style="background: #319BFC;">
+                    Add selected products
+                </h3>
+                <h3 class="btnContentTop" style="background: #FF0000;">
+                    Remove selected products
+                </h3>
+            </div>
+
+            <div class="gridContainer">
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gridContainerProduct">
+                    <img src="assets/images/product/product1.png" width="110px" height="110px">
+                    <h5>
+                        Solid Candy-Colored 3D Bear Pattern Phone  property specifies how white-space inside an element is handled.
+                    </h5>
+                    <h4 >
+                        $1.150.00
+                    </h4>
+                    <h4 style="color: #FF0000; font-size: 12px;">
+                        Profit: $150.00
+                    </h4>
+                    <div class="containerBtnBottom">
+                        <div class="btnBottom">
+                            <i class="fa-solid fa-eye" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">View</h4>
+                        </div>
+
+                        <a href="addProduct.html">
+                            <div class="btnBottom">
+                            <i class="fa-solid fa-plus" style="width: 16px; height: 16px; color: #fff;"></i>
+                            <h4 style="font-size: 14px; color: #fff; font-weight: 700;">Add</h4>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </div>
+
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <h4>Unidi © 2023</h4>
+    </div>
+
+
+    <!-- Scripts -->
+    <script>
+        let userName = document.querySelector('.userName');
+        let menu = document.querySelector('.menu');
+        userName.onclick = function () {
+            menu.classList.toggle('active');
+        }
+
+        let responsiveMenu = document.querySelector('.responsiveMenu');
+        let sidebar = document.querySelector('.sidebar');
+        responsiveMenu.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+
+
+        let sidebarLabel = document.querySelector('.sidebarLabel');
+        let sidebarContent = document.querySelector('.sidebarContent');
+        sidebarLabel.onclick = function () {
+            sidebarContent.classList.toggle('active');
+        }
+
+        let sidebarLabel1 = document.querySelector('.sidebarLabel1');
+        let sidebarContent1 = document.querySelector('.sidebarContent1');
+        sidebarLabel1.onclick = function () {
+            sidebarContent1.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

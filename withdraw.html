@@ -17,7 +17,7 @@
     <!-- navbar -->
     <nav>
         <div class="containerNavBar">
-            <img src="assets/images/logo.png" class="withImg" />
+            <a href="index.html"><img src="assets/images/logo.png" class="withImg" /></a>
             <div class="containerLogin">
                 <div class="userName">
                     <h4>Hello - Abi</h4>
@@ -39,8 +39,8 @@
 
     <!-- Sidebar -->
     <div class="containerBodyDeposit">
-        <div class="back">
-            <a href="index.html"><i class="fa-solid fa-angle-left fa-xl"></i></a>
+        <div class="back" onclick="history.back()">
+            <i class="fa-solid fa-angle-left fa-xl"></i>
         </div>
 
         <div class="containerDeposit">
@@ -73,7 +73,6 @@
                     <input type="number" placeholder="Enter withdrawal amount" required>
                     <div class="btnAmount">
                         <h4>BTC</h4>
-
                         <button>MAX</button>
                     </div>
                 </div>
